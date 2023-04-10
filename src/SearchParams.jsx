@@ -6,7 +6,11 @@ import useBreedList from "./useBreedList";
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
-  const [requestParams, setRequestParams] = useState({location: "", animal: "", breed: ""});
+  const [requestParams, setRequestParams] = useState({
+    location: "",
+    animal: "",
+    breed: "",
+  });
   const [animal, setAnimal] = useState("");
   const [breeds] = useBreedList(animal);
 
@@ -71,6 +75,5 @@ const SearchParams = () => {
     </div>
   );
 };
-
 
 export default SearchParams;
