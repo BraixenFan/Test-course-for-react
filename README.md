@@ -23,8 +23,7 @@ GitHub pages didn't quite work for me, maybe because `index.html` wasn't in the 
 The very first step is obvious, clone this repository into your machine, open up your Git terminal of choice and type:
 
 ```
-git init
-git clone BraixenFan/Test-course-for-react
+git clone git@github.com:BraixenFan/Test-course-for-react.git
 ```
 
 That should download a ton of files into your computer, my files! But not all the files, the files in `node_modules` are .gitignore-d and you may also not have a proper version of React installed on your machine.
@@ -32,16 +31,8 @@ That should download a ton of files into your computer, my files! But not all th
 Go install Node.js on your computer from [this website](https://nodejs.org/en), version 18.15.0 should be enough for this project, also install the [React development tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) if you use a chromium browser, once you've got that installed, open this project in visual studio and run:
 
 ```
- npm init -y
- npm install --global prettier
- npm install -D prettier@2.7.1 -D
- npm install -D eslint@8.24.0 eslint-config-prettier@8.5.0
- npm install -D vite@3.1.4 @vitejs/plugin-react@2.1.0
- npm install react@18.2.0 react-dom@18.2.0
- npm install -D eslint-plugin-import@2.26.0 eslint-plugin-jsx-a11y@6.6.1 eslint-plugin-react@7.31.8
- npm install -D eslint-plugin-react-hooks@4.6.0.
- npm install react-router-dom@6.4.1.
- npm install @tanstack/react-query@4.10.1 
+ npm install
+ npm install vite@3.1.4
 ```
 
 This should install everything needed for this to run, as well as care for the code if you deecide to play with it yourself. If you just want to see the code though, then just go into the terminal and type:
@@ -50,7 +41,7 @@ This should install everything needed for this to run, as well as care for the c
 npm run dev
 ```
 
-If it didn't automatically open a browser window for you, then open your favourite browser and go to http://localhost:5173/, vite should have deployed the site to this host for you to see it, it should also tell you if the port is different, but it should be that one.
+If it didn't automatically open a browser window for you, then open your favorite browser and go to http://localhost:5173/, vite should have deployed the site to this host for you to see it, it should also tell you if the port is different, but it should be that one.
 
 And there you go! You should be seeing the fruits of my labour now! And I hope you like what you see, of course it isn't very *me* if you get what I say, but it's just the beginning of my adventure with React, I've already got other ideas that would be perfectly fit for this framework, and this is just the first step.
 
